@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+header {
+    display: block;
+}
+
+hr {
+    width: 400px;
+}
+
+.brand-title {
+    text-align: center; /* apparently justify-content and align-items doesn't actually align text to the center */
+}
+
+.guesses {
+    display: grid;
+    grid-template-areas: 
+    "letter-0 letter-1 letter-2 letter-3 letter-4"
+    "letter-5 letter-6 letter-7 letter-8 letter-9"
+    "letter-10 letter-11 letter-12 letter-13 letter-14"
+    "letter-15 letter-16 letter-17 letter-18 letter-19"
+    "letter-20 letter-21 letter-22 letter-23 letter-24"
+    "letter-25 letter-26 letter-27 letter-28 letter-29";
+    padding: 40px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black; /* need to include solid to make it visible */
+    margin: 10px; /* actually creates separation between the boxes */
+    display: flex;
+}
