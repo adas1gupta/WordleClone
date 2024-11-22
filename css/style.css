@@ -42,3 +42,28 @@ hr {
     margin: 10px; /* actually creates separation between the boxes */
     display: flex;
 }
+
+.correct {
+    background-color: darkgreen;
+    color: white;
+}
+.close {
+    background-color: yellow;
+    color: white;
+}
+.wrong {
+    background-color: grey;
+    color: white;
+}
+.invalid {
+    animation: notWord 1s;
+}
+@keyframes notWord {
+    95% {
+        background-color: red;
+        color: white;
+    }
+    5% {
+        background-color: whitesmoke;
+    }
+}
