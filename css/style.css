@@ -41,6 +41,8 @@ hr {
     border: 2px solid black; /* need to include solid to make it visible */
     margin: 10px; /* actually creates separation between the boxes */
     display: flex;
+    font-size: 40px;
+    justify-content: center;
 }
 
 .correct {
